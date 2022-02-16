@@ -1,0 +1,98 @@
+.navbar-bg {
+  z-index: 99;
+  position: relative;
+  min-height: 79px;
+  .fadeInDown{
+    -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  }
+  .animated {
+    -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  .menu_fixed{
+    position: fixed;
+    z-index: 9999 !important;
+    width: 100%;
+    top: 0;
+  }
+.navbar {
+  left: 0;
+  z-index: 999;
+  background: $white_clr;
+  box-shadow: 0 0px 10px #e2dfdf;  
+  form{
+    justify-content: center;
+  }
+  li {
+  padding: 0 25px;
+  a{
+    font-size: 16px;
+    position: relative;
+    &.active, &:hover{
+      border-bottom: 1px solid;
+      border-bottom-width: 2px;
+      border-bottom-color: #17455e;
+    }
+    @media #{$tab}{
+      text-align: center;
+      &.active{
+        width: 90px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @include transform_time(0s);
+    &:hover{
+      text-shadow: 0 2px 7px rgba(183, 171, 255, 0.5);
+      @include transform_time(0s);
+    }
+  }
+}
+}
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.btn-style {
+    border-radius: 30px;
+    color: $white_clr;
+    padding: 5px 30px;
+    text-transform: capitalize;
+    font-size: 16px;
+    background-color: $btn_bg;
+    box-shadow: 0 2px 7px rgba(183, 171, 255, 0.5);
+    border: 1px solid $btn_bg!important;
+    font-weight: 500;
+    @include transform_time(0.5s);
+    &:hover{
+      background-color: $btn_hvr_bg_clr;
+      box-shadow: 0 2px 7px rgba(183, 171, 255, 0.5);
+      color: $btn_clr;
+      @include transform_time(0.5s);
+    }
+}

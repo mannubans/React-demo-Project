@@ -1,0 +1,189 @@
+/* about-us team */
+  .team .team-member {
+    margin-bottom: 20px;
+    overflow: hidden;
+    &:hover{
+        .team-social {
+            bottom: 0;
+            opacity: 1;
+            transition: bottom ease-in-out 0.4s;
+            }
+    }
+    .team-member-img {
+        position: relative;
+        overflow: hidden;
+    }
+    .team-social {
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+        right: 0;
+        height: 40px;
+        opacity: 0;
+        transition: bottom ease-in-out 0.4s;
+        text-align: center;
+        background: $bg_clr;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            transition: color 0.3s;
+            color: $white_clr;
+            margin: 0 12px;
+            display: inline-block;
+            &:hover {
+                color: #68A4C4;
+              }
+        }
+        i {
+            font-size: 18px;
+            margin: 0 2px;
+        }
+    }
+    .team-member-info {
+        h4 {
+            font-weight: 700;
+            margin: 15px 0 5px 0;
+            font-size: 18px;
+        }
+        span {
+            display: block;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: #68A4C4;
+        }
+        p {
+            font-style: italic;
+            font-size: 14px;
+            line-height: 26px;
+            color: $p_clr;
+        }
+    }
+    &:hover{
+        .team-social {
+            a, i{
+            line-height: 0;
+            font-size: 18px;
+            color: $white_clr;
+          }
+        }
+    }
+  }
+  /* <!--Accordion --> */
+  .custom-accordion{
+    .card {
+      background-color: $bg_clr;
+      padding: 30px;
+      position: relative;
+      box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
+      z-index: 1;
+      border: 1px solid $brd_clr;
+      .card-body {
+        display: none;
+      }
+      .card-header {
+        background-color: #ddebf2;
+        box-shadow: 0 2px 7px rgba(183, 171, 255, 50%);
+        color: $btn_bg;
+        @include transform_time(0.5s);
+        font-weight: 600;
+        border-radius: 10px!important;
+        span {
+          color: $white_clr;
+        }
+      }
+      .accordion-icon {
+        position: absolute;
+        right: 12px;
+        @include transform_time(0.3s)
+      }
+    }
+    .accordion-active {
+      .card-body {
+        display: block;
+        color: $white_clr;
+        padding-top: 30px;
+        padding-bottom: 0px;
+      }
+      .accordion-icon {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  /*about testimonial */
+.about-slider {
+  margin-top: 20px;
+  .swiper{
+      @media #{$tab}{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+  }
+  .swiper-pagination-bullets {
+    display: none;
+  }
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: $white_clr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
+.pagination {
+  .pagin-img img{
+    max-width: 100%;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  h5{
+    padding-top: 25px;
+  }
+}
+.testimonial{
+    img {
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid $white_clr;
+    margin: 0 auto;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0 5px 0;
+      color: $h_clr;
+    }
+    h4 {
+      font-size: 14px;
+      color: $h_clr;
+      margin: 0 0 15px 0;
+    }
+    i:first-child{
+      margin-right: 5px;
+      font-size: 15px;
+    }
+    i:last-child{
+      margin-left: 5px;
+      font-size: 15px;
+    }
+}
+  /*about testimonial */

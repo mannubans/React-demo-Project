@@ -1,0 +1,75 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background: $white_clr;
+    font-family: $main_font;
+    font-size: 14px;
+    color: #17455e;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+ol, ul, ul li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+html {
+    position: relative;
+    height: 100%;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+p{
+    color:  $p_clr;
+    letter-spacing: 0.5px;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+input:hover, input:focus {
+    outline: none !important;
+}
+a {
+    text-decoration: none;
+    font-weight: 400!important;
+    @include transform_time(0.5s);
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    background:transparent;
+    color: $p_clr!important;
+    &:hover{
+        cursor:pointer;
+        text-decoration: none;
+        @include transform_time(0.5s);
+    }
+}
+a:focus, .button:focus, button:focus, .btn:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    @include transform_time(0.5s);
+}
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.25;
+  margin-bottom: 15px;
+  color: $h_clr;
+}
+h1 {font-size: 36px;}
+h2 {font-size: 30px;}
+h3 {font-size: 24px;}
+h4 {font-size: 24px;}
+h5 {font-size: 20px;}
+h6 {font-size: 14px;}

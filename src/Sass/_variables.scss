@@ -1,0 +1,24 @@
+$main_font: 'Poppins', sans-serif;
+$transparent_clr:transparent;
+$white_clr: #fff;
+$black_clr: #000;
+$icon_clr: #ff7e5f;
+$btn_bg: #17455e;
+$btn_clr: #17455e;
+$btn_hvr_clr: #17455e;
+$btn_hvr_bg_clr: #ddebf2;
+$bg_clr: #17455e;
+$brd_clr: #17455e;
+$p_clr: #17455e;
+$h_clr: #17455e;
+
+
+$tab:'(max-width: 991px)';
+$small_mobile:'(max-width: 576px)';
+$xs_mobile:'(max-width: 420px)';
+$sm_mobile:'only screen and (min-width: 421px) and (max-width: 575px)';
+$large_mobile: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$big_screen:'only screen and (min-width: 1200px) and (max-width: 1440px)';
+$extra_big_screen: 'only screen and (min-width: 1200px) and (max-width: 3640px)';

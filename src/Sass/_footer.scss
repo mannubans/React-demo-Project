@@ -1,0 +1,107 @@
+/* --------------------------------- Footer  Section starts  
+-------------------------------------------------------*/
+.footer {
+	background: #0b212d;
+	padding: 0 0 30px 0;
+	color: $white_clr;
+	font-size: 14px;
+	.footer-upper {
+		padding: 50px 0;
+		.newsletter-heading h4 {
+			font-size: 24px;
+			margin: 0 0 20px 0;
+			padding: 0;
+			line-height: 1;
+			font-weight: 600;
+			color: $white_clr;
+		}
+		.newsletter-heading p {
+			color: $white_clr;
+			font-size: 14px!important;
+		}
+		form {
+			margin-top: 30px;
+			background: $white_clr;
+			padding: 6px 10px;
+			position: relative;
+			border-radius: 50px;
+		}
+		input[type=email] {
+			border: 0;
+			padding: 4px;
+			width: calc(100% - 100px);
+		}
+		input[type=submit] {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			border: 0;
+			margin: 3px;
+			@include transform_time(0.3s);
+			border-radius: 50px;
+		}
+	}
+	.footer-middle {
+		background: #0d2735;
+		border-top: 1px solid #17455e;
+		border-bottom: 1px solid #272a2c;
+		padding: 60px 0 30px 0;
+		.block-links {
+			@media #{$tab}{
+				margin-bottom: 40px;
+			}
+		}
+		.block-links.footer-about {
+			@media #{$tab}{
+				margin-bottom: 0;
+			}
+		}
+		ul li a {
+			color: $white_clr!important;
+			font-size: 14px;
+			&:hover {
+				text-shadow: unset!important;
+				text-decoration: underline;
+			}
+		}
+		.footer-contact p {
+			color: $white_clr;
+		}
+		.footer-about {
+			p {
+				margin-bottom: 20px;
+				text-align: justify;
+				color: $white_clr;
+			}
+			.social-icons a {
+				font-size: 18px;
+				display: inline-block;
+				background: $white_clr;
+				line-height: 1;
+				padding: 8px 0;
+				margin-right: 4px;
+				border-radius: 50%;
+				text-align: center;
+				width: 36px;
+				height: 36px;
+				@include transform_time(0.5s);
+				&:hover{
+					background: #68A4C4;
+				}
+			}
+		}
+		h5{
+			font-weight: 400;
+			color: $white_clr;
+			position: relative;
+			font-size: 20px;
+		}
+	}
+	.footer-bottom .copyright{
+		text-align: center;
+		padding-top: 30px;
+		font-size: 13px;
+		color: $white_clr;
+	}
+}

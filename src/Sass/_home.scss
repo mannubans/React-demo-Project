@@ -1,0 +1,154 @@
+// home slider section CSS start//
+.homeslider {
+    width: 100%;
+    // height: 100%;
+    height: calc(100% - 79px);
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    color: $btn_bg!important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    color: $btn_bg!important;
+}
+.swiper-pagination-bullet-active{
+    color: $btn_bg!important;
+    background-color: $btn_bg!important;
+    width: 12px!important;
+    height: 12px!important;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    text-align: center;
+    bottom: auto;
+    padding-top: unset;
+    padding-bottom: unset;
+    h3 {
+        color: $white_clr;
+        font-size: 46px;
+        @media #{$small_mobile}{
+            font-size: 34px;
+        }
+    }
+    p {
+        color: $white_clr;
+        letter-spacing: 0px;
+        @media #{$small_mobile}{
+            font-size: 18px;
+        }
+    }
+}
+// home slider section CSS end//
+
+// home service section CSS start//
+.our-services {
+    .our-services-list{
+        @media #{$tab}{
+            margin-top: 40px;
+        }
+    }
+    img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 5px 7px rgba(183, 171, 255, 50%);
+    }
+    .main-heading {
+        text-align: center;
+        font-size: 35px;
+    }
+    .our-services-number {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $btn_bg;
+        font-size: 16px;
+        display: grid;
+        place-items: center;
+        padding: 0;
+    }
+    .our-services-data {
+        padding-left: 32px;
+        p {
+            font-size: 14px;
+            margin-top: 18px;
+            margin-bottom: 18px;
+        }
+    }
+    .left-service {
+        padding-bottom: 45px;
+    }
+    .right-service {
+        padding-top: 45px;
+        @media #{$tab} {
+            flex-direction: column-reverse;
+        }
+    }
+    .our-services-info {
+        margin-top: 20px;
+    }
+}
+// home service section CSS end//
+
+// home money section CSS start//
+.money-section {
+    .money-inner {
+        border: 1px solid #a2cce3;
+        padding: 30px 50px;
+        margin-bottom: 25px;
+        @include transform_time(0.5s);
+        text-align: center;
+        &:hover{
+            border: 1px solid #17455e;
+            .money-icon a{
+                background:$btn_bg;
+            }
+        }
+        .money-icon {
+            text-align: center;
+            margin-bottom: 30px;
+            a {
+                font-size: 18px;
+                display: inline-block;
+                background: $btn_bg;
+                color: $white_clr!important;
+                line-height: 1;
+                padding: 16px 0;
+                border-radius: 50%;
+                border: 1px solid $btn_bg;
+                text-align: center;
+                width: 50px;
+                height: 50px;
+                @include transform_time(0.5s);
+                &:hover{
+                    background-color: $btn_hvr_bg_clr;
+                    box-shadow: 0 2px 7px rgba(183, 171, 255, 0.5);
+                    color: $btn_clr!important;
+                    @include transform_time(0.5s);
+                }
+            }
+        }
+        .money-desc p {
+            font-size: 14px;
+            margin-top: 18px;
+            text-align: justify;
+        }
+      }
+}
+// home money section CSS end//
+
+.tabcontent {
+    img{
+        border-radius: 10px;
+    }
+}
+.tab {
+    button{
+    color: $p_clr;
+    font-weight: 600;
+    }
+    .PrivateTabIndicator-colorSecondary-3{
+        background-color: $btn_bg!important;
+    }
+}
+

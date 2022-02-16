@@ -1,0 +1,29 @@
+/* ---------------- Contact US Section starts  --------------------------------*/
+.contactus-section .contact-input-feild {
+    padding-bottom: 24px;
+}
+.contactus-section form .form-control {
+    border: 1px solid $brd_clr;
+    -webkit-appearance: none;
+    height: 52px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: $p_clr;
+    padding-left: 14px;
+    font-weight: 400;
+}
+.contactus-section form .form-check-input {
+    width: 14px;
+    height: 14px;
+}
+.contactus-section .form-checkbox-style {
+    margin-bottom: 24px;
+}
+.contactus-section form .main-hero-para {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 10px;
+}
+.contactus-section .btn-style {
+    width: 50%!important;
+}

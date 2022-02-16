@@ -1,0 +1,137 @@
+// common heading para section CSS start//
+#root {
+    height: 100%;
+}
+  .main-head-para {
+    &.cmnptb{
+        @media #{$tab}{
+            padding: 0 0;
+        }
+    }
+    h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+    p {
+        font-size: 18px;
+        text-align: center;
+        padding-top: 10px;
+        margin-bottom: 0;
+    }
+}
+.cmnmb{
+    margin-bottom: 45px;
+}
+.cmnmt{
+    margin-top: 45px;
+    @media #{$tab}{
+        margin-top: 0px;
+    }
+}
+.cmnptb {
+    padding: 45px 0px;
+}
+.banner-section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px;
+    width: 100%;
+    text-align: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    &:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #0000008c;
+        top: 0;
+        left: 0;
+    }
+    h1{
+        font-size: 46px;
+        color: $white_clr;
+        position: relative;
+    }
+}
+.scrollTop {
+    position: fixed; 
+    width: 100%;
+    bottom: 20px;
+    height: 20px;
+    right: 20px;
+    justify-content: flex-end;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.5;
+    font-size: 50px;
+}
+.scrollTop i{
+    color: #000000;
+}
+.scrollTop:hover{
+    opacity: 1;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+}
+.sclimg-item{
+    overflow:hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 7px #b7abff;
+    img{
+        transition: all ease-in-out 0.4s;
+    }
+    &:hover img{
+        transform: scale(1.1);
+    }
+}
+.bx-sd-none{
+    box-shadow:none;
+}
+.bd-rd-none{
+    border-radius:0;
+}
+.setStyle{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    flex-direction: column;
+    .btn-style a{
+        color:$white_clr!important;
+        &:hover{
+            color:$p_clr!important;
+        }
+    }
+}
+@media (min-width: 1500px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 1500px !important;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 1400px;
+    }
+  }
